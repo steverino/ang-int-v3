@@ -1,0 +1,40 @@
+
+#card-container {
+    width: 20rem;
+    text-align: center;
+    border: 2px solid rgb(0, 0, 0);
+    margin: 0 auto;
+}
+
+#card-container ul {
+    
+    padding: 0;
+    list-style-type: none;
+}
+
+
+#card-image {
+    width: 15rem;
+    border: 1px solid rgb(0, 0, 0);
+    margin: 0 auto;
+}
+
+#card-container hr {
+    
+    width: 15rem;
+    height: 2px;
+    background-color: rgb(0, 0, 0);
+}
+
+#buy-btn {
+    width: 10rem;
+    margin-bottom: 1rem;
+}
+
+#buy-btn ul {
+    margin: 0;
+    padding: 0.3rem;
+    display: flex;
+    justify-content: space-between;
+    
+}
