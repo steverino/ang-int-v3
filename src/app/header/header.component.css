@@ -1,0 +1,22 @@
+#header-nav {
+    background-color: rgb(250, 250, 250);
+}
+
+#header-nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+#header-nav li {
+    margin-right: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+} 
+
+#header-nav li:hover {
+    background-color: rgb(150, 250, 150);
+    cursor: pointer;
+}
+#header-nav a {
+    text-decoration: none;
+}

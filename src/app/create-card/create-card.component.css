@@ -1,0 +1,34 @@
+ul {
+    list-style-type: none;
+}
+
+#create-container ul {
+    display:grid;
+    text-align: right;
+    grid-gap:5px;
+}
+
+#create-container ul input {
+    margin-left: 1rem;
+}
+
+#create-container {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    border: 2px solid rgb(0, 0, 0);
+    padding: 1rem;
+}
+
+#image-drop {
+    width: 35%;
+    
+    border: 1px solid rgb(0, 0, 0);
+    background-color: rgb(253, 253, 253);
+    margin: 0 auto;
+}
+
+#image-drop input{
+    padding: 0.5rem;
+}
