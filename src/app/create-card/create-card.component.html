@@ -1,4 +1,5 @@
 <div id="create-container">
+<form action="#" method="post" id="new-card"> 
     <section id="image-drop">
         <input type="file" name="card-upload" id="card-upload">
     </section>
@@ -7,16 +8,30 @@
 
             <li>
                 <label for="name">Card Name</label>
-                <input type="text" id="name">
+                <input type="text" 
+                id="card-name" 
+                placeholder="Card Name"
+                
+                >
             </li>
             <li>
                 <label for="owner">Card Owner</label>
-                <input type="text"  id="owner">
+                <input type="text" 
+                id="owner" 
+                placeholder="Card Owner" 
+                >
             </li>
             <li>
                 <label for="price">For Sale</label>
-                <input type="text"  id="price" placeholder="Price">
+                <input type="text" 
+                id="price" 
+                placeholder="Price" 
+                >
             </li>
         </ul>
     </section>
+    <button type="submit">Make card</button>
+</form> 
+
 </div>
+

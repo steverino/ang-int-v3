@@ -1,9 +1,16 @@
+#outer {
+    
+    display: flex;
+    flex-wrap: wrap;        
+}
 
 #card-container {
     width: 20rem;
     text-align: center;
     border: 2px solid rgb(0, 0, 0);
-    margin: 0 auto;
+    margin:  auto;
+    display: flex;
+    flex-direction: column;
 }
 
 #card-container ul {
@@ -12,11 +19,19 @@
     list-style-type: none;
 }
 
+#card-container img {
+    width: 15rem;
+    height: 20rem;
+    object-fit: contain;
+    
+}
 
-#card-image {
+
+.card-image {
     width: 15rem;
     border: 1px solid rgb(0, 0, 0);
-    margin: 0 auto;
+    margin: 0 auto 1rem auto;
+    border-radius: 6px;
 }
 
 #card-container hr {
@@ -28,7 +43,8 @@
 
 #buy-btn {
     width: 10rem;
-    margin-bottom: 1rem;
+    margin: auto auto 1rem auto;
+        
 }
 
 #buy-btn ul {

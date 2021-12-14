@@ -1,14 +1,21 @@
-<div id="card-container">
-  <ul>
-    <li id="card-image">IMAGE</li>
-    <li>TITLE</li>
-    <hr />
-    <li>OWNER</li>
-  </ul>
-  <button id="buy-btn">
+<div id="outer" *ngFor="let card of cards">
+  <div id="card-container" >
+    <h2>{{ card.title }}</h2>
     <ul>
-      <li>BUY</li>
-      <li>PRICE</li>
+      <li class="card-image">
+        <img src="{{ card.image }}" alt="{{ card.title }}">
+        
+      </li>
+      <li>{{ card.title }}</li>
+      <hr />
+      <li>{{ card.owner }}</li>
     </ul>
-  </button>
+    <button id="buy-btn">
+      <ul>
+        <li>BUY</li>
+        <li>{{ card.price }}</li>
+      </ul>
+    </button>
+  </div>
+  
 </div>
