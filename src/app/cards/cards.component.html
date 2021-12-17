@@ -1,3 +1,9 @@
+<app-sale-nav></app-sale-nav>
 <div id="card-holder">
-    <app-card-detail id="app-detail"></app-card-detail>
+  
+  <app-card-detail
+    *ngFor="let card of cards"
+    [card]="card"
+    id="app-detail"
+  ></app-card-detail>
 </div>

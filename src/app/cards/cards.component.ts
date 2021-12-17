@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { CARDS } from '../card-collection';
+import { CardService } from '../card.service';
 import { Card } from '../card';
 
 @Component({
@@ -9,17 +9,14 @@ import { Card } from '../card';
 })
 export class CardsComponent implements OnInit {
 
-  cards  = CARDS;
+  cards: Card[] = [];
 
   selectedCard?: Card;
   
-  onSelect(card: Card): void {
-    this.selectedCard = card;
-  }
-
-  constructor() { }
+  constructor(private cardService: CardService) { }
 
   ngOnInit(): void {
+    this.cardService.getCards().subscribe((cards) => this.cards = cards);
   }
   
 }

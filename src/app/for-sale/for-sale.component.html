@@ -1,11 +1,10 @@
 
-<div id="outer">
-  <div id="card-container" >
+<div id="outer" *ngFor="let card of cards">
+  <div id="card-container"  *ngIf="card.price !== ''">
     <h2>{{ card.title }}</h2>
     <ul>
-      <li class="card-image"  (click)="onSelect(card)">
-        <img src="{{ card.image }}" alt="{{ card.title }}">
-        
+      <li class="card-image" (click)="onSelect(card)">
+        <img src="{{ card.image }}" alt="{{ card.title }}" />
       </li>
       <li>{{ card.title }}</li>
       <hr />
@@ -18,5 +17,4 @@
       </ul>
     </button>
   </div>
-  
 </div>

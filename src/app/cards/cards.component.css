@@ -1,10 +1,12 @@
-/* #card-holder {
-    
-} */
+ #card-holder {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 90%;
+    margin: auto;   
+} 
 
 #app-detail {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  justify-content: center;
+  margin: auto; 
+  
 }

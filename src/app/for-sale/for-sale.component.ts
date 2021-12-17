@@ -1,35 +1,34 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { CARDS } from '../card-collection';
-import { Card } from '../card';
 import { CardService } from '../card.service';
-
+import { Card } from '../card';
 
 @Component({
-  selector: 'app-card-detail',
-  templateUrl: './card-detail.component.html',
-  styleUrls: ['./card-detail.component.css'],
+  selector: 'app-for-sale',
+  templateUrl: './for-sale.component.html',
+  styleUrls: ['./for-sale.component.css']
 })
-export class CardDetailComponent implements OnInit {
-  cards: Card[] = [];
+export class ForSaleComponent implements OnInit {
 
+
+  cards: Card[] = [];
+  
   @Input() card!: Card;
 
   selectedCard?: Card;
- 
-  constructor(private cardService: CardService) {}
-
+  
+  constructor(private cardService: CardService) { }
 
   ngOnInit(): void {
     this.getCards();
-    
   }
 
   getCards(): void {
     this.cardService.getCards().subscribe((cards) => this.cards = cards);
-      console.log(this.getCards);
+     
   }
 
   onSelect(card: Card): void {
     this.selectedCard = card;
   }
+  
 }

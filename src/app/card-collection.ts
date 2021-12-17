@@ -83,5 +83,14 @@ export const CARDS: Card[] = [
         forSale: true,
 
     },
+    {
+        id: 10,
+        image: 'assets/images/card1.jpg',
+        title: 'Another Unique Unicorn',
+        owner: 'Jacob',
+        price: '$10',
+        forSale: true,
+
+    },
 
 ]

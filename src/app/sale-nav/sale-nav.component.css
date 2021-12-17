@@ -1,0 +1,23 @@
+.sale-nav {
+    
+
+}
+
+.sale-nav ul {
+    list-style-type: none;
+    display: flex;
+   
+}
+
+.sale-nav li {
+    margin-right: 0.25rem;
+    background-color: rgb(230, 230, 230);
+    padding: 0.5rem .75rem;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.sale-nav li:hover {
+    background-color: rgb(210, 210, 210);
+    cursor: pointer;
+}

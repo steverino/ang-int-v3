@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Observable, of } from 'rxjs';
+import { observable, Observable, of } from 'rxjs';
 
 import { Card } from './card';
 import { CARDS } from './card-collection';
@@ -14,7 +14,5 @@ export class CardService {
   getCards(): Observable<Card[]> {
     const cards = of(CARDS);
     return cards;
-  }
+  } 
 }
-
-
