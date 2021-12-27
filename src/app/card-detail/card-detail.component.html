@@ -11,12 +11,20 @@
       <hr />
       <li>{{ card.owner }}</li>
     </ul>
-    <button id="buy-btn" *ngIf="card.forSale === true">
+    <button id="buy-btn" *ngIf="card.forSale === true; else blank">
       <ul>
         <li>BUY</li>
         <li>{{ card.price }}</li>
       </ul>
     </button>
+    <ng-template #blank>
+     <div class="fill">
+      <ul>
+        <li></li>
+        <li></li>
+      </ul>
+     </div>
+    </ng-template>
   </div>
   
 </div>

@@ -9,9 +9,10 @@
             <li>
                 <label for="name">Card Name</label>
                 <input type="text" 
-                id="card-name" 
+                id="card-name"
+                name="card-name" 
                 placeholder="Card Name"
-                
+                [(ngModel)]="userInput"
                 >
             </li>
             <li>
@@ -32,6 +33,6 @@
     </section>
     <button type="submit">Make card</button>
 </form> 
-
+{{ userInput }}
 </div>
 

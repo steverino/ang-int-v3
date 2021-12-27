@@ -10,13 +10,14 @@ import { CARDS } from '../card-collection';
 })
 export class CreateCardComponent implements OnInit {
 
+  userInput = '';
   cards: Card[] = [];
 
   @Input() card?: Card;
   @Output() newCardEvent = new EventEmitter();
 
-  addNewCard(value: string){
-    this.newCardEvent.emit(value);
+  addNewCard(event: Event){
+    this.userInput = (<HTMLInputElement>event.target).value;
   }
   
   constructor() { }

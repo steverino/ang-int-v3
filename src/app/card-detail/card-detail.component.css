@@ -1,5 +1,5 @@
 #outer {
-    
+       
          
 }
 
@@ -10,6 +10,7 @@
     margin:  auto;
     display: flex;
     flex-direction: column;
+    
 }
 
 #card-container ul {
@@ -33,6 +34,11 @@
     border-radius: 6px;
 }
 
+.fill {
+
+    padding-bottom: 30px;
+}
+
 #card-container hr {
     
     width: 15rem;
@@ -43,7 +49,7 @@
 #buy-btn {
     width: 10rem;
     margin: auto auto 1rem auto;
-        
+
 }
 
 #buy-btn ul {
@@ -51,5 +57,5 @@
     padding: 0.3rem;
     display: flex;
     justify-content: space-between;
-    
+       
 }
